@@ -321,7 +321,11 @@ end
 ]]
 function City_GetNumBuilding(city, building)
 	if not city then
-		log:Fatal("City_GetNumBuilding city=nil")
+		log:Fatal("City_GetNumBuilding city=%s", city)
+		return 0
+	end
+	if not building then
+		log:Fatal("City_GetNumBuilding building=%s", building)
 		return 0
 	end
 	local buildingID = GameInfo.Buildings[building]
