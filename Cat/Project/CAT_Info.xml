@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Defines>
+		<Row Name="LOADED_CAT">
+			<Value>1</Value>
+		</Row>
+		<Row Name="CAT_VERSION">
+			<Value>3.1.5b</Value>
+		</Row>
+	</Defines>
+</GameData>
