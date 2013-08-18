@@ -371,7 +371,7 @@ function Plot_IsNearHuman(plot, radius)
 	end
 	local x = plot:GetX()
 	local y = plot:GetY()
-	for playerID, player in pairs(players) do
+	for playerID, player in pairs(Players) do
 		if player:IsAliveCiv() and player:IsHuman() then
 			for city in player:Cities() do
 				if Map.PlotDistance(x, y, city:Plot():GetX(), city:Plot():GetY()) <= radius then

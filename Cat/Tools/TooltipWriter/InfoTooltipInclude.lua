@@ -681,6 +681,11 @@ function GetCultureTooltip(city)	return GetYieldTooltip(city, YieldTypes.YIELD_C
 function GetFaithTooltip(city)		return GetYieldTooltip(city, YieldTypes.YIELD_FAITH)		 end
 function GetYieldTooltipHelper(city, iYieldType, strIcon) return GetYieldTooltip(city, iYieldType) end
 
+-- TOURISM
+function GetTourismTooltip(pCity)
+	return pCity:GetTourismTooltip();
+end
+
 function GetYieldTooltip(city, yieldID)
 	--timeStart = os.clock()
 	--log:Debug("City_GetSurplusYieldRate %15s %15s", city:GetName(), GameInfo.Yields[yieldID].Type)

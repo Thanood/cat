@@ -59,8 +59,8 @@ do
 	lineSign			= nil
 	lineValue			= nil
 	lineExtra			= nil
-	objectInfo		= nil
-	objectClassInfo	= nil
+	objectInfo			= nil
+	objectClassInfo		= nil
 	activePlayer		= nil
 	activeTeam			= nil
 	adjustedCost		= nil

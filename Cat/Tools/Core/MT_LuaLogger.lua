@@ -39,6 +39,7 @@ Events.LuaLogger.New = Events.LuaLogger.New or function(self)
 	end
 
 	logger.Message = function (self, level, ...)
+		local arg = {...}
 		if LEVEL[level] < LEVEL[self.level] then
 			return false
 		end
@@ -68,16 +69,16 @@ Events.LuaLogger.New = Events.LuaLogger.New or function(self)
 	
 
 	if GameDefines.CEP_DEBUG_MODE == 1 then
-		logger.Trace = function (logger, ...) return logger:Message(LOG_TRACE, unpack(arg)) end
-		logger.Debug = function (logger, ...) return logger:Message(LOG_DEBUG, unpack(arg)) end
-		logger.Info  = function (logger, ...) return logger:Message(LOG_INFO,  unpack(arg)) end
+		logger.Trace = function (logger, ...) return logger:Message(LOG_TRACE, unpack{...}) end
+		logger.Debug = function (logger, ...) return logger:Message(LOG_DEBUG, unpack{...}) end
+		logger.Info  = function (logger, ...) return logger:Message(LOG_INFO,  unpack{...}) end
 	else
 		logger.Trace = function () end
 		logger.Debug = function () end
 		logger.Info  = function () end
 	end
-	logger.Warn  = function (logger, ...) return logger:Message(LOG_WARN,  unpack(arg)) end
-	logger.Error = function (logger, ...) return logger:Message(LOG_ERROR, unpack(arg)) end
-	logger.Fatal = function (logger, ...) return logger:Message(LOG_FATAL, unpack(arg)) end
+	logger.Warn  = function (logger, ...) return logger:Message(LOG_WARN,  unpack{...}) end
+	logger.Error = function (logger, ...) return logger:Message(LOG_ERROR, unpack{...}) end
+	logger.Fatal = function (logger, ...) return logger:Message(LOG_FATAL, unpack{...}) end
 	return logger
 end
