@@ -216,4 +216,4 @@ UPDATE HurryInfos SET YieldType = 'YIELD_'||SUBSTR(Type, 7);
 --
 -- Done
 --
-UPDATE LoadedFile SET Value=1 WHERE Type='MT_Misc.sql';
+UPDATE LoadedFile SET Value=1 WHERE Type='CAT_Misc.sql';

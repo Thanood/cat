@@ -415,3 +415,127 @@ function Game.RemoveExtraNewlines(str)
 	end
 	return str
 end
+
+
+------------------------------------------------------------------
+-- tableToString converts a table into a string
+--
+function tableToString(tbl, size, depth, separators, count)
+	local str = "";
+	if (depth > 1) then
+		for i = 1, size, 1 do
+			if tbl[i] then
+				str = str..tableToString(tbl[i], sizeOfTable(tbl[i]), depth-1, separators, count+1)..separators[count];
+			end
+		end
+	elseif depth == 1 then
+		for i = 1, size, 1 do
+			if tbl[i] then
+				str = str..tbl[i]..separators[count];
+			end
+		end
+		str = string.sub(str, 1, string.len(str)-1);
+	end
+	return str;
+end
+
+------------------------------------------------------------------
+-- tableToString converts a string into a table
+--
+function stringToTable(str, size, depth, separators, count)
+	local tbl = splitString(str, separators[count]);
+	if depth > 1 then
+		for i = 1, size, 1 do
+			tbl[i] = stringToTable(tbl[i], sizeOfTable(tbl[i]), depth-1, separators, count+1);
+		end
+	end
+	return tbl;
+end
+
+
+------------------------------------------------------------------
+-- sizeOfTable returns the size of a table
+--
+function sizeOfTable(table)
+	local size = 1;
+	while true do
+		if  not table[size] then
+			return size - 1;
+		end
+		size = size+1;
+	end
+	return 0;
+end
+
+
+
+------------------------------------------------------------------
+-- splitString returns a table of strings partitioned by an identifier
+--
+function splitString(str, pat)
+   local t = {}
+   local fpat = "(.-)" .. pat
+   local last_end = 1
+   local s, e, cap = str:find(fpat, 1)
+   while s do
+      if s ~= 1 or cap ~= "" then
+		if tonumber(cap) then
+			cap = tonumber(cap);
+		end
+		 table.insert(t,cap)
+      end
+      last_end = e+1
+      s, e, cap = str:find(fpat, last_end)
+   end
+   if last_end <= #str then
+      cap = str:sub(last_end)
+      table.insert(t, cap)
+   end
+   return t
+end
+
+
+--
+-- Queue class
+--
+
+Queue = { }
+ 
+function Queue:new(o)
+	o = o or {};
+	setmetatable(o, self);
+	self.__index = self;
+	return o;
+end
+
+function Queue:push( value )
+	table.insert(self, value);
+	if (self:size() >= QUEUE_CAPACITY) then
+		self:pop();
+	end
+end
+ 
+function Queue:pop( )
+    if self:size() == 0 then
+        return nil;
+    end
+ 
+    local val = self[self.first];
+	table.remove(self, 1);
+    return val;
+end
+ 
+function Queue:size( )
+    return #self;
+end
+
+function Queue:average()
+	local sum = 0;
+	for id,val in pairs(self) do
+		--printDebug(self[i]);
+		sum = sum + val;
+	end	
+	--printDebug("sum = " .. sum);
+	--printDebug("self:size() = " .. self:size());
+	return math.floor(sum / self:size());
+end

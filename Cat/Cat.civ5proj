@@ -23,22 +23,17 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Project/CAT_Start.sql</FileName>
+        <FileName>_Project/CAT_Start.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Tools/Start/MT_AlterTables.sql</FileName>
+        <FileName>_Project/CAT_AlterTables.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Tools/Start/MT_Misc.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Project/CAT_Info.xml</FileName>
+        <FileName>_Project/CAT_Info.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -49,6 +44,11 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Interface/Interface_Data.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Tools/CAT_Misc.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -104,11 +104,6 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Tools/Cat_PromotionOrder.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Tools/CiVUP_QuickCombat.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -528,7 +523,7 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Project/CAT_End.sql</FileName>
+        <FileName>_Project/CAT_End.sql</FileName>
       </Action>
     </ModActions>
     <Homepage>http://civmodding.wordpress.com/</Homepage>
@@ -577,14 +572,12 @@
     <PackageMod>false</PackageMod>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Project" />
+    <Folder Include="_Project" />
     <Folder Include="AI" />
     <Folder Include="Tools" />
     <Folder Include="Interface\Icons" />
-    <Folder Include="Misc" />
     <Folder Include="Interface" />
     <Folder Include="Tools\Core\" />
-    <Folder Include="Tools\Start" />
     <Folder Include="Tools\YieldLibrary" />
     <Folder Include="Tools\TooltipWriter" />
     <Folder Include="Tools\ClassMethods" />
@@ -685,15 +678,19 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Project\CAT_End.sql">
+    <Content Include="Tools\CAT_Misc.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Project\CAT_Info.xml">
+    <Content Include="_Project\CAT_End.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Project\CAT_Start.sql">
+    <Content Include="_Project\CAT_Info.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="_Project\CAT_Start.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -905,14 +902,6 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Tools\Start\MT_AlterTables.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Tools\Start\MT_Misc.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Tools\TooltipWriter\TW_PromoStats.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1008,6 +997,10 @@
     <Content Include="TunerMods\WorldView.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="_Project\CAT_AlterTables.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />

@@ -371,7 +371,7 @@ ALTER TABLE HandicapInfos	ADD AIResearchPercent					variant default 0;
 ALTER TABLE HandicapInfos	ADD AIResearchPercentPerEra				variant default 0;
 ALTER TABLE HandicapInfos	ADD AIProductionPercentPerEra			variant default 0;
 ALTER TABLE HandicapInfos	ADD AIGold								integer default 0;
-ALTER TABLE HandicapInfos	ADD AISearchRange				integer default 0;
+ALTER TABLE HandicapInfos	ADD AISearchRange						integer default 0;
 ALTER TABLE HandicapInfos	ADD AICapitalYieldPeaceful				integer default 0;
 ALTER TABLE HandicapInfos	ADD AICapitalYieldMilitaristic			integer default 0;
 UPDATE HandicapInfos		SET AIFreeXPPerEra						= 0;
@@ -380,7 +380,7 @@ UPDATE HandicapInfos		SET AIResearchPercent					= 0;
 UPDATE HandicapInfos		SET AIResearchPercentPerEra				= 0;
 UPDATE HandicapInfos		SET AIProductionPercentPerEra			= 0;
 UPDATE HandicapInfos		SET AIGold								= 0;
-UPDATE HandicapInfos		SET AISearchRange				= 0;
+UPDATE HandicapInfos		SET AISearchRange						= 0;
 UPDATE HandicapInfos		SET AICapitalYieldPeaceful				= 0;
 UPDATE HandicapInfos		SET AICapitalYieldMilitaristic			= 0;
 
@@ -412,6 +412,7 @@ ALTER TABLE Resources		ADD MutuallyExclusiveGroup				integer default -1;
 ALTER TABLE Traits			ADD LandBarbarianCapturePercent			integer default 0;
 ALTER TABLE Traits			ADD MinorCivCaptureBonus				integer default 0;
 ALTER TABLE Traits			ADD CityGoldPerLuxuryPercent			integer default 0;
+ALTER TABLE Traits			ADD CityGoldPerLuxuryBuildingClass		text REFERENCES BuildingClasses(Type);
 ALTER TABLE Traits			ADD HappinessFromKills					integer default 0;
 ALTER TABLE Traits			ADD MilitaristicCSFreePromotion			text;
 ALTER TABLE Traits			ADD FreeShip							text;
@@ -422,6 +423,7 @@ ALTER TABLE Traits			ADD NaturalWonderExponent				variant default 1;
 ALTER TABLE Traits			ADD SeaBarbarianCapturePercent			integer default 0;
 ALTER TABLE Traits			ADD OpenBordersGoldModifier				integer default 0;
 ALTER TABLE Traits			ADD Tribute								text;
+ALTER TABLE Traits			ADD ImmigrationFrequency				integer default 0;
 
 ALTER TABLE Specialists		ADD IconString							text;
 
