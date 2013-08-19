@@ -441,7 +441,7 @@ ALTER TABLE UnitPromotions	ADD FullMovesAfterAttack				boolean;
 ALTER TABLE UnitPromotions	ADD GoldenPoints						integer default 0;
 ALTER TABLE UnitPromotions	ADD Class								text default 'PROMOTION_CLASS_PERSISTANT';
 
-ALTER TABLE Worlds			ADD AISearchRange				integer default 0;
+ALTER TABLE Worlds			ADD AISearchRange						integer default 0;
 ALTER TABLE Worlds			ADD ResourceMod							integer default 100;
 UPDATE Worlds SET ResourceMod = 100;
 

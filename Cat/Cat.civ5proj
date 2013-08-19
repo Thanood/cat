@@ -609,6 +609,10 @@
     <Folder Include="TunerMods\DebugFolder" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AI\CEAI_FixTables.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Cat_Language.xls">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -874,10 +878,6 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Tools\Core\MT_ErrorHandler.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Tools\Core\MT_FixTables.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>

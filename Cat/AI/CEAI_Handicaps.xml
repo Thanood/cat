@@ -1,388 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
-	<HandicapInfos>
-		<Update>
-			<Where Type="HANDICAP_WARLORD" />
-			<Set>
-				<StartingLocPercent>50</StartingLocPercent>
-				<AdvancedStartPointsMod>100</AdvancedStartPointsMod>
-				<HappinessDefault>9</HappinessDefault>
-				<NumCitiesUnhappinessMod>75</NumCitiesUnhappinessMod>
-				<PopulationUnhappinessMod>75</PopulationUnhappinessMod>
-				<Gold>0</Gold>
-				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>100</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>50</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
-				<RouteCostPercent>100</RouteCostPercent>
-				<UnitCostPercent>100</UnitCostPercent>
-				<BuildingCostPercent>100</BuildingCostPercent>
-				<ResearchPercent>100</ResearchPercent>
-				<PolicyPercent>100</PolicyPercent>
-				<ImprovementCostPercent>100</ImprovementCostPercent>
-				<CityProductionNumOptionsConsidered>2</CityProductionNumOptionsConsidered>
-				<TechNumOptionsConsidered>2</TechNumOptionsConsidered>
-				<PolicyNumOptionsConsidered>2</PolicyNumOptionsConsidered>
-				<!--<InflationPercent>90</InflationPercent>-->
-				<AttitudeChange>-1</AttitudeChange>
-				<NoTechTradeModifier>70</NoTechTradeModifier>
-				<AIDeclareWarProb>100</AIDeclareWarProb>
-				<AIWorkRateModifier>0</AIWorkRateModifier>
-				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>100</AIGrowthPercent>
-				<AITrainPercent>100</AITrainPercent>
-				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>50</AIConstructPercent>
-				<AIWorldConstructPercent>100</AIWorldConstructPercent>
-				<AICreatePercent>100</AICreatePercent>
-				<AIWorldCreatePercent>100</AIWorldCreatePercent>
-				<AIBuildingCostPercent>100</AIBuildingCostPercent>
-				<AIUnitCostPercent>100</AIUnitCostPercent>
-				<AIUnitSupplyPercent>0</AIUnitSupplyPercent>
-				<AIUnitUpgradePercent>100</AIUnitUpgradePercent>
-				<!--<AIInflationPercent>80</AIInflationPercent>-->
-				<AIAdvancedStartPercent>100</AIAdvancedStartPercent>
-				<AIFreeXP>10</AIFreeXP>
-				<AIFreeXPPerEra>4</AIFreeXPPerEra>
-				<AIResearchPercent>0</AIResearchPercent>
-				<AIResearchPercentPerEra>0</AIResearchPercentPerEra>
-				<AIProductionPercentPerEra>0</AIProductionPercentPerEra>
-				<AIGold>00</AIGold>
-				<AICapitalYieldPeaceful>0</AICapitalYieldPeaceful>
-				<AICapitalYieldMilitaristic>2</AICapitalYieldMilitaristic>
-			</Set>
-		</Update>
-		<Update>
-			<Where Type="HANDICAP_PRINCE" />
-			<Set>
-				<StartingLocPercent>50</StartingLocPercent>
-				<AdvancedStartPointsMod>90</AdvancedStartPointsMod>
-				<HappinessDefault>9</HappinessDefault>
-				<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
-				<PopulationUnhappinessMod>100</PopulationUnhappinessMod>
-				<Gold>0</Gold>
-				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>100</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>50</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
-				<RouteCostPercent>100</RouteCostPercent>
-				<UnitCostPercent>100</UnitCostPercent>
-				<BuildingCostPercent>100</BuildingCostPercent>
-				<ResearchPercent>100</ResearchPercent>
-				<PolicyPercent>100</PolicyPercent>
-				<ImprovementCostPercent>100</ImprovementCostPercent>
-				<CityProductionNumOptionsConsidered>2</CityProductionNumOptionsConsidered>
-				<TechNumOptionsConsidered>2</TechNumOptionsConsidered>
-				<PolicyNumOptionsConsidered>2</PolicyNumOptionsConsidered>
-				<!--<InflationPercent>100</InflationPercent>-->
-				<AttitudeChange>-1</AttitudeChange>
-				<NoTechTradeModifier>50</NoTechTradeModifier>
-				<AIStartingDefenseUnits>0</AIStartingDefenseUnits>
-				<AIDeclareWarProb>100</AIDeclareWarProb>
-				<AIWorkRateModifier>20</AIWorkRateModifier>
-				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>100</AIGrowthPercent>
-				<AITrainPercent>100</AITrainPercent>
-				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>50</AIConstructPercent>
-				<AIWorldConstructPercent>85</AIWorldConstructPercent>
-				<AICreatePercent>100</AICreatePercent>
-				<AIWorldCreatePercent>100</AIWorldCreatePercent>
-				<AIBuildingCostPercent>100</AIBuildingCostPercent>
-				<AIUnitCostPercent>83</AIUnitCostPercent>
-				<AIUnitSupplyPercent>10</AIUnitSupplyPercent>
-				<AIUnitUpgradePercent>60</AIUnitUpgradePercent>
-				<!--<AIInflationPercent>80</AIInflationPercent>-->
-				<AIPerEraModifier>-2</AIPerEraModifier>
-				<AIAdvancedStartPercent>120</AIAdvancedStartPercent>
-				<AIFreeXP>20</AIFreeXP>
-				<AIFreeXPPerEra>8</AIFreeXPPerEra>
-				<AIFreePromotion>PROMOTION_HANDICAP</AIFreePromotion>
-				<AIResearchPercent>18</AIResearchPercent>
-				<AIResearchPercentPerEra>4</AIResearchPercentPerEra>
-				<AIProductionPercentPerEra>1</AIProductionPercentPerEra>
-				<AIGold>00</AIGold>
-				<AICapitalYieldPeaceful>2</AICapitalYieldPeaceful>
-				<AICapitalYieldMilitaristic>4</AICapitalYieldMilitaristic>
-			</Set>
-		</Update>
-		<Update>
-			<Where Type="HANDICAP_KING" />
-			<Set>
-				<StartingLocPercent>50</StartingLocPercent>
-				<AdvancedStartPointsMod>85</AdvancedStartPointsMod>
-				<HappinessDefault>9</HappinessDefault>
-				<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
-				<PopulationUnhappinessMod>100</PopulationUnhappinessMod>
-				<Gold>0</Gold>
-				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>100</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>50</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
-				<RouteCostPercent>100</RouteCostPercent>
-				<UnitCostPercent>100</UnitCostPercent>
-				<BuildingCostPercent>100</BuildingCostPercent>
-				<ResearchPercent>100</ResearchPercent>
-				<PolicyPercent>100</PolicyPercent>
-				<ImprovementCostPercent>100</ImprovementCostPercent>
-				<CityProductionNumOptionsConsidered>2</CityProductionNumOptionsConsidered>
-				<TechNumOptionsConsidered>2</TechNumOptionsConsidered>
-				<PolicyNumOptionsConsidered>2</PolicyNumOptionsConsidered>
-				<!--<InflationPercent>100</InflationPercent>-->
-				<AttitudeChange>-1</AttitudeChange>
-				<NoTechTradeModifier>40</NoTechTradeModifier>
-				<AIStartingDefenseUnits>0</AIStartingDefenseUnits>
-				<AIStartingWorkerUnits>1</AIStartingWorkerUnits>
-				<AIDeclareWarProb>100</AIDeclareWarProb>
-				<AIWorkRateModifier>50</AIWorkRateModifier>
-				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>100</AIGrowthPercent>
-				<AITrainPercent>100</AITrainPercent>
-				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>50</AIConstructPercent>
-				<AIWorldConstructPercent>75</AIWorldConstructPercent>
-				<AICreatePercent>100</AICreatePercent>
-				<AIWorldCreatePercent>100</AIWorldCreatePercent>
-				<AIBuildingCostPercent>100</AIBuildingCostPercent>
-				<AIUnitCostPercent>71</AIUnitCostPercent>
-				<AIUnitSupplyPercent>20</AIUnitSupplyPercent>
-				<AIUnitUpgradePercent>50</AIUnitUpgradePercent>
-				<!--<AIInflationPercent>80</AIInflationPercent>-->
-				<AIPerEraModifier>-3</AIPerEraModifier>
-				<AIAdvancedStartPercent>140</AIAdvancedStartPercent>
-				<AIFreeXP>25</AIFreeXP>
-				<AIFreeXPPerEra>12</AIFreeXPPerEra>
-				<AIFreePromotion>PROMOTION_HANDICAP</AIFreePromotion>
-				<AIResearchPercent>36</AIResearchPercent>
-				<AIResearchPercentPerEra>8</AIResearchPercentPerEra>
-				<AIProductionPercentPerEra>2</AIProductionPercentPerEra>
-				<AIGold>00</AIGold>
-				<AICapitalYieldPeaceful>2</AICapitalYieldPeaceful>
-				<AICapitalYieldMilitaristic>5</AICapitalYieldMilitaristic>
-			</Set>
-		</Update>
-		<Update>
-			<Where Type="HANDICAP_EMPEROR" />
-			<Set>
-				<StartingLocPercent>50</StartingLocPercent>
-				<AdvancedStartPointsMod>80</AdvancedStartPointsMod>
-				<HappinessDefault>9</HappinessDefault>
-				<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
-				<PopulationUnhappinessMod>100</PopulationUnhappinessMod>
-				<Gold>0</Gold>
-				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>100</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>50</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
-				<RouteCostPercent>100</RouteCostPercent>
-				<UnitCostPercent>100</UnitCostPercent>
-				<BuildingCostPercent>100</BuildingCostPercent>
-				<ResearchPercent>100</ResearchPercent>
-				<PolicyPercent>100</PolicyPercent>
-				<ImprovementCostPercent>100</ImprovementCostPercent>
-				<CityProductionNumOptionsConsidered>2</CityProductionNumOptionsConsidered>
-				<TechNumOptionsConsidered>2</TechNumOptionsConsidered>
-				<PolicyNumOptionsConsidered>2</PolicyNumOptionsConsidered>
-				<!--<InflationPercent>100</InflationPercent>-->
-				<AttitudeChange>-1</AttitudeChange>
-				<NoTechTradeModifier>30</NoTechTradeModifier>
-				<AIStartingDefenseUnits>0</AIStartingDefenseUnits>
-				<AIStartingWorkerUnits>1</AIStartingWorkerUnits>
-				<AIStartingExploreUnits>0</AIStartingExploreUnits>
-				<AIDeclareWarProb>100</AIDeclareWarProb>
-				<AIWorkRateModifier>75</AIWorkRateModifier>
-				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>100</AIGrowthPercent>
-				<AITrainPercent>100</AITrainPercent>
-				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>50</AIConstructPercent>
-				<AIWorldConstructPercent>75</AIWorldConstructPercent>
-				<AICreatePercent>100</AICreatePercent>
-				<AIWorldCreatePercent>100</AIWorldCreatePercent>
-				<AIBuildingCostPercent>100</AIBuildingCostPercent>
-				<AIUnitCostPercent>63</AIUnitCostPercent>
-				<AIUnitSupplyPercent>30</AIUnitSupplyPercent>
-				<AIUnitUpgradePercent>50</AIUnitUpgradePercent>
-				<!--<AIInflationPercent>80</AIInflationPercent>-->
-				<AIPerEraModifier>-4</AIPerEraModifier>
-				<AIAdvancedStartPercent>160</AIAdvancedStartPercent>
-				<AIFreeXP>30</AIFreeXP>
-				<AIFreeXPPerEra>16</AIFreeXPPerEra>
-				<AIFreePromotion>PROMOTION_HANDICAP</AIFreePromotion>
-				<AIResearchPercent>54</AIResearchPercent>
-				<AIResearchPercentPerEra>12</AIResearchPercentPerEra>
-				<AIProductionPercentPerEra>3</AIProductionPercentPerEra>
-				<AIGold>00</AIGold>
-				<AICapitalYieldPeaceful>3</AICapitalYieldPeaceful>
-				<AICapitalYieldMilitaristic>6</AICapitalYieldMilitaristic>
-			</Set>
-		</Update>
-		<Update>
-			<Where Type="HANDICAP_IMMORTAL" />
-			<Set>
-				<StartingLocPercent>50</StartingLocPercent>
-				<AdvancedStartPointsMod>75</AdvancedStartPointsMod>
-				<HappinessDefault>9</HappinessDefault>
-				<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
-				<PopulationUnhappinessMod>100</PopulationUnhappinessMod>
-				<Gold>0</Gold>
-				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>100</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>50</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
-				<RouteCostPercent>100</RouteCostPercent>
-				<UnitCostPercent>100</UnitCostPercent>
-				<BuildingCostPercent>100</BuildingCostPercent>
-				<ResearchPercent>100</ResearchPercent>
-				<PolicyPercent>100</PolicyPercent>
-				<ImprovementCostPercent>100</ImprovementCostPercent>
-				<CityProductionNumOptionsConsidered>2</CityProductionNumOptionsConsidered>
-				<TechNumOptionsConsidered>2</TechNumOptionsConsidered>
-				<PolicyNumOptionsConsidered>2</PolicyNumOptionsConsidered>
-				<!--<InflationPercent>100</InflationPercent>-->
-				<AttitudeChange>-1</AttitudeChange>
-				<NoTechTradeModifier>20</NoTechTradeModifier>
-				<AIStartingUnitMultiplier>1</AIStartingUnitMultiplier>
-				<AIStartingDefenseUnits>0</AIStartingDefenseUnits>
-				<AIStartingWorkerUnits>1</AIStartingWorkerUnits>
-				<AIStartingExploreUnits>0</AIStartingExploreUnits>
-				<AIDeclareWarProb>100</AIDeclareWarProb>
-				<AIWorkRateModifier>100</AIWorkRateModifier>
-				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>100</AIGrowthPercent>
-				<AITrainPercent>100</AITrainPercent>
-				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>50</AIConstructPercent>
-				<AIWorldConstructPercent>75</AIWorldConstructPercent>
-				<AICreatePercent>100</AICreatePercent>
-				<AIWorldCreatePercent>100</AIWorldCreatePercent>
-				<AIBuildingCostPercent>100</AIBuildingCostPercent>
-				<AIUnitCostPercent>56</AIUnitCostPercent>
-				<AIUnitSupplyPercent>40</AIUnitSupplyPercent>
-				<AIUnitUpgradePercent>50</AIUnitUpgradePercent>
-				<!--<AIInflationPercent>80</AIInflationPercent>-->
-				<AIPerEraModifier>-5</AIPerEraModifier>
-				<AIAdvancedStartPercent>180</AIAdvancedStartPercent>
-				<AIFreeXP>35</AIFreeXP>
-				<AIFreeXPPerEra>20</AIFreeXPPerEra>
-				<AIFreePromotion>PROMOTION_HANDICAP</AIFreePromotion>
-				<AIResearchPercent>72</AIResearchPercent>
-				<AIResearchPercentPerEra>16</AIResearchPercentPerEra>
-				<AIProductionPercentPerEra>4</AIProductionPercentPerEra>
-				<AIGold>00</AIGold>
-				<AICapitalYieldPeaceful>4</AICapitalYieldPeaceful>
-				<AICapitalYieldMilitaristic>7</AICapitalYieldMilitaristic>
-			</Set>
-		</Update>
-		<Update>
-			<Where Type="HANDICAP_DEITY" />
-			<Set>
-				<StartingLocPercent>50</StartingLocPercent>
-				<AdvancedStartPointsMod>70</AdvancedStartPointsMod>
-				<HappinessDefault>9</HappinessDefault>
-				<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
-				<PopulationUnhappinessMod>100</PopulationUnhappinessMod>
-				<Gold>0</Gold>
-				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>100</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>50</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
-				<RouteCostPercent>100</RouteCostPercent>
-				<UnitCostPercent>100</UnitCostPercent>
-				<BuildingCostPercent>100</BuildingCostPercent>
-				<ResearchPercent>100</ResearchPercent>
-				<PolicyPercent>100</PolicyPercent>
-				<ImprovementCostPercent>100</ImprovementCostPercent>
-				<CityProductionNumOptionsConsidered>2</CityProductionNumOptionsConsidered>
-				<TechNumOptionsConsidered>2</TechNumOptionsConsidered>
-				<PolicyNumOptionsConsidered>2</PolicyNumOptionsConsidered>
-				<!--<InflationPercent>100</InflationPercent>-->
-				<AttitudeChange>-1</AttitudeChange>
-				<NoTechTradeModifier>10</NoTechTradeModifier>
-				<AIStartingUnitMultiplier>1</AIStartingUnitMultiplier>
-				<AIStartingDefenseUnits>1</AIStartingDefenseUnits>
-				<AIStartingWorkerUnits>2</AIStartingWorkerUnits>
-				<AIStartingExploreUnits>2</AIStartingExploreUnits>
-				<AIDeclareWarProb>100</AIDeclareWarProb>
-				<AIWorkRateModifier>150</AIWorkRateModifier>
-				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>100</AIGrowthPercent>
-				<AITrainPercent>100</AITrainPercent>
-				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>50</AIConstructPercent>
-				<AIWorldConstructPercent>75</AIWorldConstructPercent>
-				<AICreatePercent>100</AICreatePercent>
-				<AIWorldCreatePercent>100</AIWorldCreatePercent>
-				<AIBuildingCostPercent>100</AIBuildingCostPercent>
-				<AIUnitCostPercent>25</AIUnitCostPercent>
-				<AIUnitSupplyPercent>50</AIUnitSupplyPercent>
-				<AIUnitUpgradePercent>25</AIUnitUpgradePercent>
-				<!--<AIInflationPercent>80</AIInflationPercent>-->
-				<AIPerEraModifier>-6</AIPerEraModifier>
-				<AIAdvancedStartPercent>200</AIAdvancedStartPercent>
-				<AIFreeXP>50</AIFreeXP>
-				<AIFreeXPPerEra>30</AIFreeXPPerEra>
-				<AIFreePromotion>PROMOTION_HANDICAP</AIFreePromotion>
-				<AIResearchPercent>200</AIResearchPercent>
-				<AIResearchPercentPerEra>20</AIResearchPercentPerEra>
-				<AIProductionPercentPerEra>5</AIProductionPercentPerEra>
-				<AIGold>100</AIGold>
-				<AICapitalYieldPeaceful>5</AICapitalYieldPeaceful>
-				<AICapitalYieldMilitaristic>10</AICapitalYieldMilitaristic>
-			</Set>
-		</Update>
-	</HandicapInfos>
-	<HandicapInfos>
-		<Update>
-			<Where Type="HANDICAP_AI_DEFAULT" />
-			<Set>
-				<Type>HANDICAP_AI_DEFAULT</Type>
-				<Description>TXT_KEY_HANDICAP_AI_DEFAULT</Description>
-				<Help>TXT_KEY_HANDICAP_AI_DEFAULT_HELP</Help>
-				<StartingLocPercent>50</StartingLocPercent>
-				<AdvancedStartPointsMod>130</AdvancedStartPointsMod>
-				<HappinessDefault>17</HappinessDefault>
-				<ExtraHappinessPerLuxury>0</ExtraHappinessPerLuxury>
-				<NumCitiesUnhappinessMod>90</NumCitiesUnhappinessMod>
-				<PopulationUnhappinessMod>90</PopulationUnhappinessMod>
-				<Gold>0</Gold>
-				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>7</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>50</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>3</ProductionFreeUnitsPerCity>
-				<RouteCostPercent>100</RouteCostPercent>
-				<UnitCostPercent>100</UnitCostPercent>
-				<BuildingCostPercent>100</BuildingCostPercent>
-				<ResearchPercent>100</ResearchPercent>
-				<PolicyPercent>100</PolicyPercent>
-				<ImprovementCostPercent>50</ImprovementCostPercent>
-				<CityProductionNumOptionsConsidered>4</CityProductionNumOptionsConsidered>
-				<TechNumOptionsConsidered>4</TechNumOptionsConsidered>
-				<PolicyNumOptionsConsidered>4</PolicyNumOptionsConsidered>
-				<!--<InflationPercent>70</InflationPercent>-->
-				<AttitudeChange>1</AttitudeChange>
-				<NoTechTradeModifier>90</NoTechTradeModifier>
-				<TechTradeKnownModifier>-50</TechTradeKnownModifier>
-				<AIDeclareWarProb>75</AIDeclareWarProb>
-				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>100</AIGrowthPercent>
-				<AITrainPercent>100</AITrainPercent>
-				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>100</AIConstructPercent>
-				<AIWorldConstructPercent>75</AIWorldConstructPercent>
-				<AICreatePercent>100</AICreatePercent>
-				<AIWorldCreatePercent>100</AIWorldCreatePercent>
-				<AIBuildingCostPercent>100</AIBuildingCostPercent>
-				<AIUnitCostPercent>100</AIUnitCostPercent>
-				<AIUnitSupplyPercent>0</AIUnitSupplyPercent>
-				<AIUnitUpgradePercent>50</AIUnitUpgradePercent>
-				<!--<AIInflationPercent>90</AIInflationPercent>-->
-				<AIAdvancedStartPercent>100</AIAdvancedStartPercent>
-				<IconAtlas>DIFFICULTY_ATLAS</IconAtlas>
-				<PortraitIndex>8</PortraitIndex>
-			</Set>
-		</Update>
-	</HandicapInfos>
 	<PostDefines>
 		<Update>
 			<Where Name="STANDARD_HANDICAP" />
@@ -446,4 +63,654 @@
 		<Delete TechType="TECH_THE_WHEEL" />
 		-->
 	</HandicapInfo_AIFreeTechs>
+
+
+
+	<!--
+    This CEAI_Handicaps.xml data automatically created by:
+    Handicaps tab of CEP_LeadersAI.xls
+-->
+	<HandicapInfos>
+		<Update>
+			<Where Type="HANDICAP_SETTLER" />
+			<Set Description               = "TXT_KEY_HANDICAP_SETTLER"
+			Help                           = "TXT_KEY_HANDICAP_SETTLER_HELP"
+			HappinessDefault               = "8"
+			NumCitiesUnhappinessMod        = "40"
+			PopulationUnhappinessMod       = "40"
+			AIGrowthPercent                = "160"
+			AIResearchPercent              = "0"
+			AIResearchPercentPerEra        = "0"
+			AITrainPercent                 = "175"
+			AIConstructPercent             = "160"
+			AIWorldConstructPercent        = "160"
+			AICreatePercent                = "160"
+			AIProductionPercentPerEra      = "0"
+			AIWorldTrainPercent            = "160"
+			AIWorldCreatePercent           = "160"
+			AIBuildingCostPercent          = "100"
+			AIUnitCostPercent              = "100"
+			AIUnitUpgradePercent           = "50"
+			AIUnitSupplyPercent            = "0"
+
+			AIBarbarianBonus               = "100"
+			AIFreeXPPercent                = "0"
+			AIFreeXP                       = "0"
+			AIFreeXPPerEra                 = "0"
+
+			AIWorkRateModifier             = "0"
+
+
+			AIStartingDefenseUnits         = "0"
+			AIStartingWorkerUnits          = "0"
+			AIStartingExploreUnits         = "0"
+			AIStartingUnitMultiplier       = "0"
+			AIGold                         = "0"
+
+			AICapitalYieldPeaceful         = "0"
+			AICapitalYieldMilitaristic     = "0"
+
+			AttitudeChange                 = "2"
+			AIDeclareWarProb               = "0"
+			AIUnhappinessPercent           = "100"
+			AIInflationPercent             = "100"
+			AIPerEraModifier               = "0"
+			AIAdvancedStartPercent         = "100"
+			RouteCostPercent               = "34"
+			UnitCostPercent                = "50"
+			BuildingCostPercent            = "50"
+			ResearchPercent                = "90"
+			PolicyPercent                  = "50"
+			ImprovementCostPercent         = "100"
+			StartingDefenseUnits           = "0"
+			StartingWorkerUnits            = "0"
+			StartingExploreUnits           = "0"
+			BarbCampGold                   = "50"
+			BarbSpawnMod                   = "0"
+			BarbarianBonus                 = "150"
+			EarliestBarbarianReleaseTurn   = "100"
+			BarbarianLandTargetRange       = "5"
+			BarbarianSeaTargetRange        = "10"
+			StartingLocPercent             = "50"
+			AdvancedStartPointsMod         = "150"
+			ExtraHappinessPerLuxury        = "1"
+			GoldFreeUnits                  = "0"
+			ProductionFreeUnits            = "10"
+			ProductionFreeUnitsPerCity     = "3"
+			StartingPolicyPoints           = "0"
+			ProductionFreeUnitsPopulationPercent     = "50"
+			CityProductionNumOptionsConsidered       = "10"
+			TechNumOptionsConsidered       = "10"
+			PolicyNumOptionsConsidered     = "10"
+			InflationPercent               = "100"
+			FreeCulturePerTurn             = "0"
+			NoTechTradeModifier            = "100"
+			TechTradeKnownModifier         = "-100"
+			PortraitIndex                  = "0"
+			IconAtlas                      = "DIFFICULTY_ATLAS"
+/>
+		</Update>
+
+		<Update>
+			<Where Type="HANDICAP_CHIEFTAIN" />
+			<Set Description               = "TXT_KEY_HANDICAP_CHIEFTAIN"
+			Help                           = "TXT_KEY_HANDICAP_CHIEFTAIN_HELP"
+			HappinessDefault               = "5"
+			NumCitiesUnhappinessMod        = "60"
+			PopulationUnhappinessMod       = "60"
+			AIGrowthPercent                = "130"
+			AIResearchPercent              = "0"
+			AIResearchPercentPerEra        = "0"
+			AITrainPercent                 = "130"
+			AIConstructPercent             = "130"
+			AIWorldConstructPercent        = "130"
+			AICreatePercent                = "130"
+			AIProductionPercentPerEra      = "0"
+			AIWorldTrainPercent            = "130"
+			AIWorldCreatePercent           = "130"
+			AIBuildingCostPercent          = "100"
+			AIUnitCostPercent              = "100"
+			AIUnitUpgradePercent           = "50"
+			AIUnitSupplyPercent            = "0"
+    
+			AIBarbarianBonus               = "100"
+			AIFreeXPPercent                = "0"
+			AIFreeXP                       = "0"
+			AIFreeXPPerEra                 = "0"
+    
+			AIWorkRateModifier             = "0"
+    
+    
+			AIStartingDefenseUnits         = "0"
+			AIStartingWorkerUnits          = "0"
+			AIStartingExploreUnits         = "0"
+			AIStartingUnitMultiplier       = "0"
+			AIGold                         = "0"
+    
+			AICapitalYieldPeaceful         = "0"
+			AICapitalYieldMilitaristic     = "0"
+    
+			AttitudeChange                 = "1"
+			AIDeclareWarProb               = "75"
+			AIUnhappinessPercent           = "100"
+			AIInflationPercent             = "100"
+			AIPerEraModifier               = "0"
+			AIAdvancedStartPercent         = "100"
+			RouteCostPercent               = "50"
+			UnitCostPercent                = "67"
+			BuildingCostPercent            = "67"
+			ResearchPercent                = "95"
+			PolicyPercent                  = "67"
+			ImprovementCostPercent         = "100"
+			StartingDefenseUnits           = "0"
+			StartingWorkerUnits            = "0"
+			StartingExploreUnits           = "0"
+			BarbCampGold                   = "50"
+			BarbSpawnMod                   = "0"
+			BarbarianBonus                 = "50"
+			EarliestBarbarianReleaseTurn   = "100"
+			BarbarianLandTargetRange       = "5"
+			BarbarianSeaTargetRange        = "10"
+			StartingLocPercent             = "50"
+			AdvancedStartPointsMod         = "130"
+			ExtraHappinessPerLuxury        = "1"
+			GoldFreeUnits                  = "0"
+			ProductionFreeUnits            = "7"
+			ProductionFreeUnitsPerCity     = "3"
+			StartingPolicyPoints           = "0"
+			ProductionFreeUnitsPopulationPercent     = "50"
+			CityProductionNumOptionsConsidered       = "4"
+			TechNumOptionsConsidered       = "4"
+			PolicyNumOptionsConsidered     = "4"
+			InflationPercent               = "100"
+			FreeCulturePerTurn             = "0"
+			NoTechTradeModifier            = "90"
+			TechTradeKnownModifier         = "-50"
+			PortraitIndex                  = "1"
+			IconAtlas                      = "DIFFICULTY_ATLAS"
+/>
+		</Update>
+
+		<Update>
+			<Where Type="HANDICAP_WARLORD" />
+			<Set Description               = "TXT_KEY_HANDICAP_WARLORD"
+			Help                           = "TXT_KEY_HANDICAP_WARLORD_HELP"
+			HappinessDefault               = "0"
+			NumCitiesUnhappinessMod        = "75"
+			PopulationUnhappinessMod       = "75"
+			AIGrowthPercent                = "100"
+			AIResearchPercent              = "0"
+			AIResearchPercentPerEra        = "0"
+			AITrainPercent                 = "100"
+			AIConstructPercent             = "50"
+			AIWorldConstructPercent        = "100"
+			AICreatePercent                = "100"
+			AIProductionPercentPerEra      = "0"
+			AIWorldTrainPercent            = "100"
+			AIWorldCreatePercent           = "100"
+			AIBuildingCostPercent          = "100"
+			AIUnitCostPercent              = "100"
+			AIUnitUpgradePercent           = "100"
+			AIUnitSupplyPercent            = "0"
+    
+			AIBarbarianBonus               = "100"
+			AIFreeXPPercent                = "0"
+			AIFreeXP                       = "15"
+			AIFreeXPPerEra                 = "4"
+    
+			AIWorkRateModifier             = "0"
+    
+    
+			AIStartingDefenseUnits         = "0"
+			AIStartingWorkerUnits          = "0"
+			AIStartingExploreUnits         = "0"
+			AIStartingUnitMultiplier       = "0"
+			AIGold                         = "0"
+    
+			AICapitalYieldPeaceful         = "0"
+			AICapitalYieldMilitaristic     = "2"
+    
+			AttitudeChange                 = "-1"
+			AIDeclareWarProb               = "100"
+			AIUnhappinessPercent           = "100"
+			AIInflationPercent             = "100"
+			AIPerEraModifier               = "0"
+			AIAdvancedStartPercent         = "100"
+			RouteCostPercent               = "100"
+			UnitCostPercent                = "100"
+			BuildingCostPercent            = "100"
+			ResearchPercent                = "100"
+			PolicyPercent                  = "100"
+			ImprovementCostPercent         = "100"
+			StartingDefenseUnits           = "0"
+			StartingWorkerUnits            = "0"
+			StartingExploreUnits           = "0"
+			BarbCampGold                   = "50"
+			BarbSpawnMod                   = "0"
+			BarbarianBonus                 = "20"
+			EarliestBarbarianReleaseTurn   = "90"
+			BarbarianLandTargetRange       = "5"
+			BarbarianSeaTargetRange        = "10"
+			StartingLocPercent             = "50"
+			AdvancedStartPointsMod         = "100"
+			ExtraHappinessPerLuxury        = "0"
+			GoldFreeUnits                  = "0"
+			ProductionFreeUnits            = "100"
+			ProductionFreeUnitsPerCity     = "2"
+			StartingPolicyPoints           = "0"
+			ProductionFreeUnitsPopulationPercent     = "50"
+			CityProductionNumOptionsConsidered       = "2"
+			TechNumOptionsConsidered       = "2"
+			PolicyNumOptionsConsidered     = "2"
+			InflationPercent               = "100"
+			FreeCulturePerTurn             = "0"
+			NoTechTradeModifier            = "70"
+			TechTradeKnownModifier         = "-25"
+			PortraitIndex                  = "2"
+			IconAtlas                      = "DIFFICULTY_ATLAS"
+/>
+		</Update>
+
+		<Update>
+			<Where Type="HANDICAP_PRINCE" />
+			<Set Description               = "TXT_KEY_HANDICAP_PRINCE"
+			Help                           = "TXT_KEY_HANDICAP_PRINCE_HELP"
+			HappinessDefault               = "0"
+			NumCitiesUnhappinessMod        = "100"
+			PopulationUnhappinessMod       = "100"
+			AIGrowthPercent                = "100"
+			AIResearchPercent              = "18"
+			AIResearchPercentPerEra        = "4"
+			AITrainPercent                 = "100"
+			AIConstructPercent             = "50"
+			AIWorldConstructPercent        = "85"
+			AICreatePercent                = "100"
+			AIProductionPercentPerEra      = "1"
+			AIWorldTrainPercent            = "100"
+			AIWorldCreatePercent           = "100"
+			AIBuildingCostPercent          = "100"
+			AIUnitCostPercent              = "83"
+			AIUnitUpgradePercent           = "60"
+			AIUnitSupplyPercent            = "5"
+			AIFreePromotion                = "PROMOTION_HANDICAP"
+			AIBarbarianBonus               = "100"
+			AIFreeXPPercent                = "0"
+			AIFreeXP                       = "30"
+			AIFreeXPPerEra                 = "8"
+    
+			AIWorkRateModifier             = "20"
+    
+    
+			AIStartingDefenseUnits         = "0"
+			AIStartingWorkerUnits          = "0"
+			AIStartingExploreUnits         = "0"
+			AIStartingUnitMultiplier       = "0"
+			AIGold                         = "0"
+    
+			AICapitalYieldPeaceful         = "2"
+			AICapitalYieldMilitaristic     = "4"
+    
+			AttitudeChange                 = "-1"
+			AIDeclareWarProb               = "100"
+			AIUnhappinessPercent           = "100"
+			AIInflationPercent             = "100"
+			AIPerEraModifier               = "-2"
+			AIAdvancedStartPercent         = "120"
+			RouteCostPercent               = "100"
+			UnitCostPercent                = "100"
+			BuildingCostPercent            = "100"
+			ResearchPercent                = "100"
+			PolicyPercent                  = "100"
+			ImprovementCostPercent         = "100"
+			StartingDefenseUnits           = "0"
+			StartingWorkerUnits            = "0"
+			StartingExploreUnits           = "0"
+			BarbCampGold                   = "50"
+			BarbSpawnMod                   = "0"
+			BarbarianBonus                 = "15"
+			EarliestBarbarianReleaseTurn   = "80"
+			BarbarianLandTargetRange       = "5"
+			BarbarianSeaTargetRange        = "12"
+			StartingLocPercent             = "50"
+			AdvancedStartPointsMod         = "90"
+			ExtraHappinessPerLuxury        = "0"
+			GoldFreeUnits                  = "0"
+			ProductionFreeUnits            = "100"
+			ProductionFreeUnitsPerCity     = "2"
+			StartingPolicyPoints           = "0"
+			ProductionFreeUnitsPopulationPercent     = "50"
+			CityProductionNumOptionsConsidered       = "2"
+			TechNumOptionsConsidered       = "2"
+			PolicyNumOptionsConsidered     = "2"
+			InflationPercent               = "100"
+			FreeCulturePerTurn             = "0"
+			NoTechTradeModifier            = "50"
+			TechTradeKnownModifier         = "0"
+			PortraitIndex                  = "3"
+			IconAtlas                      = "DIFFICULTY_ATLAS"
+/>
+		</Update>
+
+		<Update>
+			<Where Type="HANDICAP_KING" />
+			<Set Description               = "TXT_KEY_HANDICAP_KING"
+			Help                           = "TXT_KEY_HANDICAP_KING_HELP"
+			HappinessDefault               = "0"
+			NumCitiesUnhappinessMod        = "100"
+			PopulationUnhappinessMod       = "100"
+			AIGrowthPercent                = "100"
+			AIResearchPercent              = "36"
+			AIResearchPercentPerEra        = "8"
+			AITrainPercent                 = "100"
+			AIConstructPercent             = "50"
+			AIWorldConstructPercent        = "75"
+			AICreatePercent                = "100"
+			AIProductionPercentPerEra      = "2"
+			AIWorldTrainPercent            = "100"
+			AIWorldCreatePercent           = "100"
+			AIBuildingCostPercent          = "100"
+			AIUnitCostPercent              = "71"
+			AIUnitUpgradePercent           = "50"
+			AIUnitSupplyPercent            = "10"
+			AIFreePromotion                = "PROMOTION_HANDICAP"
+			AIBarbarianBonus               = "100"
+			AIFreeXPPercent                = "0"
+			AIFreeXP                       = "35"
+			AIFreeXPPerEra                 = "12"
+    
+			AIWorkRateModifier             = "50"
+    
+    
+			AIStartingDefenseUnits         = "0"
+			AIStartingWorkerUnits          = "1"
+			AIStartingExploreUnits         = "0"
+			AIStartingUnitMultiplier       = "0"
+			AIGold                         = "0"
+    
+			AICapitalYieldPeaceful         = "2"
+			AICapitalYieldMilitaristic     = "5"
+    
+			AttitudeChange                 = "-1"
+			AIDeclareWarProb               = "100"
+			AIUnhappinessPercent           = "100"
+			AIInflationPercent             = "100"
+			AIPerEraModifier               = "-3"
+			AIAdvancedStartPercent         = "140"
+			RouteCostPercent               = "100"
+			UnitCostPercent                = "100"
+			BuildingCostPercent            = "100"
+			ResearchPercent                = "100"
+			PolicyPercent                  = "100"
+			ImprovementCostPercent         = "100"
+			StartingDefenseUnits           = "0"
+			StartingWorkerUnits            = "0"
+			StartingExploreUnits           = "0"
+			BarbCampGold                   = "50"
+			BarbSpawnMod                   = "0"
+			BarbarianBonus                 = "15"
+			EarliestBarbarianReleaseTurn   = "70"
+			BarbarianLandTargetRange       = "6"
+			BarbarianSeaTargetRange        = "15"
+			StartingLocPercent             = "50"
+			AdvancedStartPointsMod         = "85"
+			ExtraHappinessPerLuxury        = "0"
+			GoldFreeUnits                  = "0"
+			ProductionFreeUnits            = "100"
+			ProductionFreeUnitsPerCity     = "2"
+			StartingPolicyPoints           = "0"
+			ProductionFreeUnitsPopulationPercent     = "50"
+			CityProductionNumOptionsConsidered       = "2"
+			TechNumOptionsConsidered       = "2"
+			PolicyNumOptionsConsidered     = "2"
+			InflationPercent               = "100"
+			FreeCulturePerTurn             = "0"
+			NoTechTradeModifier            = "40"
+			TechTradeKnownModifier         = "0"
+			PortraitIndex                  = "4"
+			IconAtlas                      = "DIFFICULTY_ATLAS"
+/>
+		</Update>
+
+		<Update>
+			<Where Type="HANDICAP_EMPEROR" />
+			<Set Description               = "TXT_KEY_HANDICAP_EMPEROR"
+			Help                           = "TXT_KEY_HANDICAP_EMPEROR_HELP"
+			HappinessDefault               = "0"
+			NumCitiesUnhappinessMod        = "100"
+			PopulationUnhappinessMod       = "100"
+			AIGrowthPercent                = "100"
+			AIResearchPercent              = "54"
+			AIResearchPercentPerEra        = "12"
+			AITrainPercent                 = "100"
+			AIConstructPercent             = "50"
+			AIWorldConstructPercent        = "75"
+			AICreatePercent                = "100"
+			AIProductionPercentPerEra      = "3"
+			AIWorldTrainPercent            = "100"
+			AIWorldCreatePercent           = "100"
+			AIBuildingCostPercent          = "100"
+			AIUnitCostPercent              = "63"
+			AIUnitUpgradePercent           = "50"
+			AIUnitSupplyPercent            = "15"
+			AIFreePromotion                = "PROMOTION_HANDICAP"
+			AIBarbarianBonus               = "100"
+			AIFreeXPPercent                = "25"
+			AIFreeXP                       = "40"
+			AIFreeXPPerEra                 = "16"
+    
+			AIWorkRateModifier             = "75"
+    
+    
+			AIStartingDefenseUnits         = "0"
+			AIStartingWorkerUnits          = "1"
+			AIStartingExploreUnits         = "0"
+			AIStartingUnitMultiplier       = "0"
+			AIGold                         = "0"
+    
+			AICapitalYieldPeaceful         = "3"
+			AICapitalYieldMilitaristic     = "6"
+    
+			AttitudeChange                 = "-1"
+			AIDeclareWarProb               = "100"
+			AIUnhappinessPercent           = "100"
+			AIInflationPercent             = "100"
+			AIPerEraModifier               = "-4"
+			AIAdvancedStartPercent         = "160"
+			RouteCostPercent               = "100"
+			UnitCostPercent                = "100"
+			BuildingCostPercent            = "100"
+			ResearchPercent                = "100"
+			PolicyPercent                  = "100"
+			ImprovementCostPercent         = "100"
+			StartingDefenseUnits           = "0"
+			StartingWorkerUnits            = "0"
+			StartingExploreUnits           = "0"
+			BarbCampGold                   = "50"
+			BarbSpawnMod                   = "0"
+			BarbarianBonus                 = "15"
+			EarliestBarbarianReleaseTurn   = "60"
+			BarbarianLandTargetRange       = "7"
+			BarbarianSeaTargetRange        = "18"
+			StartingLocPercent             = "50"
+			AdvancedStartPointsMod         = "80"
+			ExtraHappinessPerLuxury        = "0"
+			GoldFreeUnits                  = "0"
+			ProductionFreeUnits            = "100"
+			ProductionFreeUnitsPerCity     = "2"
+			StartingPolicyPoints           = "0"
+			ProductionFreeUnitsPopulationPercent     = "50"
+			CityProductionNumOptionsConsidered       = "2"
+			TechNumOptionsConsidered       = "2"
+			PolicyNumOptionsConsidered     = "2"
+			InflationPercent               = "100"
+			FreeCulturePerTurn             = "0"
+			NoTechTradeModifier            = "30"
+			TechTradeKnownModifier         = "0"
+			PortraitIndex                  = "5"
+			IconAtlas                      = "DIFFICULTY_ATLAS"
+/>
+		</Update>
+
+		<Update>
+			<Where Type="HANDICAP_IMMORTAL" />
+			<Set Description               = "TXT_KEY_HANDICAP_IMMORTAL"
+			Help                           = "TXT_KEY_HANDICAP_IMMORTAL_HELP"
+			HappinessDefault               = "0"
+			NumCitiesUnhappinessMod        = "100"
+			PopulationUnhappinessMod       = "100"
+			AIGrowthPercent                = "100"
+			AIResearchPercent              = "72"
+			AIResearchPercentPerEra        = "16"
+			AITrainPercent                 = "100"
+			AIConstructPercent             = "50"
+			AIWorldConstructPercent        = "75"
+			AICreatePercent                = "100"
+			AIProductionPercentPerEra      = "4"
+			AIWorldTrainPercent            = "100"
+			AIWorldCreatePercent           = "100"
+			AIBuildingCostPercent          = "100"
+			AIUnitCostPercent              = "56"
+			AIUnitUpgradePercent           = "50"
+			AIUnitSupplyPercent            = "20"
+			AIFreePromotion                = "PROMOTION_HANDICAP"
+			AIBarbarianBonus               = "100"
+			AIFreeXPPercent                = "50"
+			AIFreeXP                       = "50"
+			AIFreeXPPerEra                 = "20"
+    
+			AIWorkRateModifier             = "100"
+    
+    
+			AIStartingDefenseUnits         = "0"
+			AIStartingWorkerUnits          = "1"
+			AIStartingExploreUnits         = "0"
+			AIStartingUnitMultiplier       = "0"
+			AIGold                         = "0"
+    
+			AICapitalYieldPeaceful         = "4"
+			AICapitalYieldMilitaristic     = "7"
+    
+			AttitudeChange                 = "-1"
+			AIDeclareWarProb               = "100"
+			AIUnhappinessPercent           = "100"
+			AIInflationPercent             = "100"
+			AIPerEraModifier               = "-5"
+			AIAdvancedStartPercent         = "180"
+			RouteCostPercent               = "100"
+			UnitCostPercent                = "100"
+			BuildingCostPercent            = "100"
+			ResearchPercent                = "100"
+			PolicyPercent                  = "100"
+			ImprovementCostPercent         = "100"
+			StartingDefenseUnits           = "0"
+			StartingWorkerUnits            = "0"
+			StartingExploreUnits           = "0"
+			BarbCampGold                   = "50"
+			BarbSpawnMod                   = "0"
+			BarbarianBonus                 = "15"
+			EarliestBarbarianReleaseTurn   = "40"
+			BarbarianLandTargetRange       = "8"
+			BarbarianSeaTargetRange        = "20"
+			StartingLocPercent             = "50"
+			AdvancedStartPointsMod         = "75"
+			ExtraHappinessPerLuxury        = "0"
+			GoldFreeUnits                  = "0"
+			ProductionFreeUnits            = "100"
+			ProductionFreeUnitsPerCity     = "2"
+			StartingPolicyPoints           = "0"
+			ProductionFreeUnitsPopulationPercent     = "50"
+			CityProductionNumOptionsConsidered       = "2"
+			TechNumOptionsConsidered       = "2"
+			PolicyNumOptionsConsidered     = "2"
+			InflationPercent               = "100"
+			FreeCulturePerTurn             = "0"
+			NoTechTradeModifier            = "20"
+			TechTradeKnownModifier         = "0"
+			PortraitIndex                  = "6"
+			IconAtlas                      = "DIFFICULTY_ATLAS"
+/>
+		</Update>
+
+
+		<Update>
+			<Where Type="HANDICAP_DEITY" />
+			<Set Description               = "TXT_KEY_HANDICAP_DEITY"
+			Help                           = "TXT_KEY_HANDICAP_DEITY_HELP"
+			HappinessDefault               = "0"
+			NumCitiesUnhappinessMod        = "100"
+			PopulationUnhappinessMod       = "100"
+			AIGrowthPercent                = "100"
+			AIResearchPercent              = "200"
+			AIResearchPercentPerEra        = "20"
+			AITrainPercent                 = "100"
+			AIConstructPercent             = "50"
+			AIWorldConstructPercent        = "75"
+			AICreatePercent                = "100"
+			AIProductionPercentPerEra      = "5"
+			AIWorldTrainPercent            = "100"
+			AIWorldCreatePercent           = "100"
+			AIBuildingCostPercent          = "100"
+			AIUnitCostPercent              = "25"
+			AIUnitUpgradePercent           = "25"
+			AIUnitSupplyPercent            = "25"
+			AIFreePromotion                = "PROMOTION_HANDICAP"
+			AIBarbarianBonus               = "100"
+			AIFreeXPPercent                = "100"
+			AIFreeXP                       = "60"
+			AIFreeXPPerEra                 = "30"
+    
+			AIWorkRateModifier             = "150"
+    
+    
+			AIStartingDefenseUnits         = "1"
+			AIStartingWorkerUnits          = "2"
+			AIStartingExploreUnits         = "2"
+			AIStartingUnitMultiplier       = "0"
+			AIGold                         = "100"
+    
+			AICapitalYieldPeaceful         = "5"
+			AICapitalYieldMilitaristic     = "10"
+    
+			AttitudeChange                 = "-1"
+			AIDeclareWarProb               = "100"
+			AIUnhappinessPercent           = "100"
+			AIInflationPercent             = "100"
+			AIPerEraModifier               = "-6"
+			AIAdvancedStartPercent         = "200"
+			RouteCostPercent               = "100"
+			UnitCostPercent                = "100"
+			BuildingCostPercent            = "100"
+			ResearchPercent                = "100"
+			PolicyPercent                  = "100"
+			ImprovementCostPercent         = "100"
+			StartingDefenseUnits           = "0"
+			StartingWorkerUnits            = "0"
+			StartingExploreUnits           = "0"
+			BarbCampGold                   = "50"
+			BarbSpawnMod                   = "0"
+			BarbarianBonus                 = "15"
+			EarliestBarbarianReleaseTurn   = "20"
+			BarbarianLandTargetRange       = "10"
+			BarbarianSeaTargetRange        = "22"
+			StartingLocPercent             = "50"
+			AdvancedStartPointsMod         = "70"
+			ExtraHappinessPerLuxury        = "0"
+			GoldFreeUnits                  = "0"
+			ProductionFreeUnits            = "100"
+			ProductionFreeUnitsPerCity     = "2"
+			StartingPolicyPoints           = "0"
+			ProductionFreeUnitsPopulationPercent     = "50"
+			CityProductionNumOptionsConsidered       = "2"
+			TechNumOptionsConsidered       = "2"
+			PolicyNumOptionsConsidered     = "2"
+			InflationPercent               = "100"
+			FreeCulturePerTurn             = "0"
+			NoTechTradeModifier            = "10"
+			TechTradeKnownModifier         = "0"
+			PortraitIndex                  = "7"
+			IconAtlas                      = "DIFFICULTY_ATLAS"
+/>
+		</Update>
+	</HandicapInfos>
+
 </GameData>

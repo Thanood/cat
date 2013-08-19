@@ -119,8 +119,8 @@ INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 11
 INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 12, 0, 'YieldFromTech'               , 'Game.HasValue({BuildingType=cepObjectInfo.Type}, GameInfo.Building_TechEnhancedYieldChanges)');
 INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 13, 0, 'YieldFromReligion'           , 'Game.HasValue({BuildingType=cepObjectInfo.Type}, GameInfo.Building_YieldChangesPerReligion)');
 INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 14, 0, 'YieldFromBuildings'          , 'Game.HasValue({BuildingType=cepObjectInfo.Type}, GameInfo.Building_BuildingClassYieldChanges)');
-INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 15, 0, 'TradeRouteLandGoldBonus'     , 'cepObjectInfo.TradeRouteLandGoldBonus / 100');
-INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 16, 0, 'TradeRouteSeaGoldBonus'      , 'cepObjectInfo.TradeRouteSeaGoldBonus / 100');
+INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 15, 0, 'TradeRouteLandGoldBonus'     , 'cepObjectInfo.TradeRouteLandGoldBonus');
+INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 16, 0, 'TradeRouteSeaGoldBonus'      , 'cepObjectInfo.TradeRouteSeaGoldBonus');
 INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 17, 1, 'YieldMod'                    , 'Game.GetDefaultBuildingStatText');
 INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 18, 0, 'YieldModFromBuildings'       , 'Game.HasValue({BuildingType=cepObjectInfo.Type}, GameInfo.Building_BuildingClassYieldModifiers)');
 INSERT INTO BuildingStats(Section, Priority, Dynamic, Type, Value) VALUES (3, 19, 0, 'YieldModMilitary'            , 'cepObjectInfo.MilitaryProductionModifier');

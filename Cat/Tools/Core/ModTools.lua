@@ -29,7 +29,7 @@ end
 --include("MT_Events.lua")
 
 include("MT_Enums.lua")
-include("MT_FixTables.lua")
+include("CEAI_FixTables.lua")
 include("MT_ErrorHandler.lua")
 include("MT_LuaLogger.lua")
 include("MT_LoadSave.lua")
