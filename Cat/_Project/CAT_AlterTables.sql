@@ -424,6 +424,9 @@ ALTER TABLE Traits			ADD SeaBarbarianCapturePercent			integer default 0;
 ALTER TABLE Traits			ADD OpenBordersGoldModifier				integer default 0;
 ALTER TABLE Traits			ADD Tribute								text;
 ALTER TABLE Traits			ADD ImmigrationFrequency				integer default 0;
+ALTER TABLE Traits			ADD CityCaptureFaith					integer default 0;
+ALTER TABLE Traits			ADD CityCaptureFaithPerPop				integer default 0;
+ALTER TABLE Traits			ADD CityCaptureFaithPerEra				integer default 0;
 
 ALTER TABLE Specialists		ADD IconString							text;
 
