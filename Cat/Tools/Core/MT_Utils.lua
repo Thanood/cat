@@ -82,9 +82,7 @@ function Game.DoOnce(str)
 end
 
 ----------------------------------------------------------------
---[[ Game.DeepCopy(object) usage example: copies all elements of a table
-table1 = Game.DeepCopy(table2)
-]]
+-- Game.DeepCopy(object) copies all elements of a table
 function Game.DeepCopy(object)
     local lookup_table = {}
     local function _copy(object)

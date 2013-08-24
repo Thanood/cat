@@ -142,7 +142,8 @@ CREATE TABLE IF NOT EXISTS
 	Trait_FreeUnitAtTech (
 	TraitType		text REFERENCES Traits(Type),
 	TechType		text REFERENCES Technologies(Type),
-	UnitClassType	text REFERENCES UnitClasses(Type)
+	UnitClassType	text REFERENCES UnitClasses(Type),
+	PromotionType	text REFERENCES UnitPromotions(Type)
 );
 	
 CREATE TABLE IF NOT EXISTS
@@ -427,6 +428,8 @@ ALTER TABLE Traits			ADD ImmigrationFrequency				integer default 0;
 ALTER TABLE Traits			ADD CityCaptureFaith					integer default 0;
 ALTER TABLE Traits			ADD CityCaptureFaithPerPop				integer default 0;
 ALTER TABLE Traits			ADD CityCaptureFaithPerEra				integer default 0;
+ALTER TABLE Traits			ADD CityCaptureFaithPerEraExponent		variant default 1;
+ALTER TABLE Traits			ADD BullySurrender						boolean;
 
 ALTER TABLE Specialists		ADD IconString							text;
 

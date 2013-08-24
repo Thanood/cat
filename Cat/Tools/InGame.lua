@@ -1013,7 +1013,7 @@ function OnUpdate(fDTime)
 			if v.shownYet == true then
 				v.elapsedTime = v.elapsedTime + fDTime;
 			end
-			if v.elapsedTime >= 8 then
+			if v.elapsedTime >= 32 then
 				mustRefreshAlerts = true;
 			end
 		end
@@ -1022,7 +1022,7 @@ function OnUpdate(fDTime)
 			local newAlertTable = {};
 			g_InstanceManager:ResetInstances();
 			for i, v in ipairs( alertTable ) do
-				if v.elapsedTime < 8 then
+				if v.elapsedTime < 32 then
 					v.shownYet = true;
 					table.insert( newAlertTable, v );
 				end
