@@ -123,7 +123,17 @@ CREATE TABLE IF NOT EXISTS
 	Opposite		text,
 	Value			text
 );
-	
+
+CREATE TABLE IF NOT EXISTS
+	Trait_CityCaptureInstantYield (
+	TraitType		text REFERENCES Traits(Type),
+	YieldType		text REFERENCES Yields(Type),
+	Yield			integer default 0,
+	YieldPerPop		integer default 0,
+	YieldPerEra		integer default 0,
+	YieldPerEraExponent	integer default 0
+);
+
 CREATE TABLE IF NOT EXISTS
 	Trait_FreePromotionUnitTypes (
 	TraitType		text REFERENCES Traits(Type),
@@ -424,6 +434,7 @@ ALTER TABLE Traits			ADD NaturalWonderExponent				variant default 1;
 ALTER TABLE Traits			ADD SeaBarbarianCapturePercent			integer default 0;
 ALTER TABLE Traits			ADD OpenBordersGoldModifier				integer default 0;
 ALTER TABLE Traits			ADD Tribute								text;
+ALTER TABLE Traits			ADD HanseaticLeague						text;
 ALTER TABLE Traits			ADD ImmigrationFrequency				integer default 0;
 ALTER TABLE Traits			ADD CityCaptureFaith					integer default 0;
 ALTER TABLE Traits			ADD CityCaptureFaithPerPop				integer default 0;

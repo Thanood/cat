@@ -5,10 +5,25 @@
 -- Unit Flavors: update flavor types
 --
 
+/*
+DELETE FROM Unit_Flavors WHERE FlavorType IN (
+	'FLAVOR_RELIGION'		,
+	'FLAVOR_ANTI_MOBILE'	,
+	'FLAVOR_SOLDIER'	,
+	'FLAVOR_SIEGE'	,
+	'FLAVOR_NAVAL_BOMBARDMENT'	,
+	''	,
+	''	,
+	''	,
+	''	,
+	''	,
+);
+*/
+
 INSERT INTO Unit_Flavors (UnitType, FlavorType, Flavor)
 SELECT Type, 'FLAVOR_RELIGION', 1
 FROM Units WHERE Class IN (
-	'UNITCLASS_MISSIONARY'			,
+	'UNITCLASS_MISSIONARY' ,
 	'UNITCLASS_INQUISITOR'			
 );
 
