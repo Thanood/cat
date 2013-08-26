@@ -302,8 +302,8 @@ DELETE FROM Technology_Flavors_Human;
 	/**/
 
 	
-	UPDATE Technology_Flavors SET Flavor = 0.66 * Flavor;
-	UPDATE Technology_Flavors_Human SET Flavor = 0.66 * Flavor;
+	UPDATE Technology_Flavors SET Flavor = 0.75 * Flavor;
+	UPDATE Technology_Flavors_Human SET Flavor = 0.75 * Flavor;
 
 -- Round to nearest power of 2
 
@@ -336,4 +336,4 @@ DELETE FROM Technology_Flavors_Human;
 	--UPDATE Technology_Flavors_Human SET Flavor = POWER( ROUND(LOG(Flavor)/LOG(2)), 2 ) -- Sqlite does not have power or log functions?!
 
 
-UPDATE LoadedFile SET Value=1 WHERE Type='CEAI__End_Techs.sql';
+UPDATE LoadedFile SET Value=1 WHERE Type='CEAI_Flavor_Techs.sql';

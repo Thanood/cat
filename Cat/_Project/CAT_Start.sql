@@ -19,7 +19,7 @@ INSERT INTO LoadedFile(Type, Value) VALUES ('CEAI_LeaderPersonalities.sql'	, 0);
 INSERT INTO LoadedFile(Type, Value) VALUES ('CEAI_LeaderFlavors.sql'		, 0);
 INSERT INTO LoadedFile(Type, Value) VALUES ('CEAI__Start.sql'				, 0);
 INSERT INTO LoadedFile(Type, Value) VALUES ('CEAI__End_Flavors.sql'			, 0);
-INSERT INTO LoadedFile(Type, Value) VALUES ('CEAI__End_Techs.sql'			, 0);
+INSERT INTO LoadedFile(Type, Value) VALUES ('CEAI_Flavor_Techs.sql'			, 0);
 INSERT INTO LoadedFile(Type, Value) VALUES ('AI.sql'						, 0);
 
 

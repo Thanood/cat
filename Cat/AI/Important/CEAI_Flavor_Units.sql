@@ -1,98 +1,5 @@
 -- 
 
-UPDATE CitySpecialization_TargetYields
-SET Yield = 50
-WHERE YieldType = 'YIELD_FOOD';
-
-
---
--- Availability: Builds
---
-
--- Common like farms
-UPDATE Builds SET AIAvailability = 8
-WHERE Type IN (SELECT build.Type FROM Improvements improve, Builds build
-WHERE ( build.PrereqTech IS NOT NULL
-	AND build.ImprovementType = improve.Type
-	AND improve.SpecificCivRequired = 0
-	AND improve.Type IN (SELECT ImprovementType FROM Improvement_ValidTerrains)
-) OR  ( build.PrereqTech IS NOT NULL
-	AND build.RouteType IS NOT NULL
-));
-
--- Resource-specific
-UPDATE Builds SET AIAvailability = 4
-WHERE Type IN (SELECT build.Type FROM Improvements improve, Builds build
-WHERE ( build.PrereqTech IS NOT NULL
-	AND build.ImprovementType = improve.Type
-	AND improve.SpecificCivRequired = 0
-	AND improve.Type NOT IN (SELECT ImprovementType FROM Improvement_ValidTerrains)
-));
-
--- Great improvements
-UPDATE Builds SET AIAvailability = 2
-WHERE Type IN (SELECT build.Type FROM Improvements improve, Builds build
-WHERE ( build.ImprovementType = improve.Type
-	AND improve.CreatedByGreatPerson = 1
-));
-
--- Double
-UPDATE Builds SET AIAvailability = 2
-WHERE Type IN ('BUILD_WELL', 'BUILD_OFFSHORE_PLATFORM');
-
-
---
--- Availability: Buildings
---
-
-UPDATE Buildings SET AIAvailability = 8;
-
-UPDATE Buildings SET AIAvailability = 4
-WHERE (Water = 1
-	OR River = 1
-	OR FreshWater = 1
-	OR Hill = 1
-	OR Flat = 1
-	OR Mountain = 1
-	OR NearbyMountainRequired = 1
-	OR MutuallyExclusiveGroup = 1
-	OR NoOccupiedUnhappiness = 1
-	OR NearbyTerrainRequired IS NOT NULL
-);
-
-UPDATE Buildings SET AIAvailability = 4
-WHERE (Type IN (SELECT BuildingType FROM Building_ResourceQuantityRequirements)
-	OR Type IN (SELECT BuildingType FROM Building_LocalResourceOrs)
-	OR Type IN (SELECT BuildingType FROM Building_LocalResourceAnds)
-	--OR Type IN (SELECT BuildingType FROM Building_ResourceYieldModifiers)
-);
-
-UPDATE Buildings SET AIAvailability = 2
-WHERE Type IN (SELECT building.Type
-FROM Buildings building, BuildingClasses class
-WHERE (building.BuildingClass = class.Type AND (
-	   class.MaxGlobalInstances = 1
-	OR class.MaxPlayerInstances = 1
-	OR class.MaxTeamInstances = 1
-)));
-
-
---
--- Building Priorities
---
-
-/*
-INSERT OR IGNORE INTO Building_Flavors(BuildingType, FlavorType, Flavor)
-SELECT building.Type, flavor.FlavorType, 2 * flavor.Flavor
-FROM Buildings building, Buildings buildingDefault, BuildingClasses class, Building_Flavors flavor
-WHERE ( buildingDefault.BuildingClass	= building.BuildingClass
-	AND buildingDefault.Type			<> building.Type
-	AND buildingDefault.BuildingClass	= class.Type
-	AND buildingDefault.Type			= class.DefaultBuilding
-	AND buildingDefault.Type			= flavor.BuildingType
-);
-*/
-
 
 --
 -- Unit Flavors: update flavor types
@@ -410,6 +317,17 @@ UPDATE Unit_Flavors SET Flavor = ROUND(Flavor * 0.5, 0)
 WHERE FlavorType = 'FLAVOR_DEFENSE' 
 AND UnitType IN (SELECT UnitType FROM Unit_ResourceQuantityRequirements);
 */
+
+
+
+
+-- Join duplicated flavors
+DROP TABLE IF EXISTS CEP_Collisions;
+CREATE TABLE CEP_Collisions(UnitType text, FlavorType text, Flavor integer);
+INSERT INTO CEP_Collisions (UnitType, FlavorType, Flavor) SELECT UnitType, FlavorType, MAX(Flavor) FROM Unit_Flavors GROUP BY UnitType, FlavorType;
+DELETE FROM Unit_Flavors;
+INSERT INTO Unit_Flavors (UnitType, FlavorType, Flavor) SELECT UnitType, FlavorType, Flavor FROM CEP_Collisions;
+DROP TABLE CEP_Collisions;
 
 
 UPDATE LoadedFile SET Value=1 WHERE Type='CEAI__End_Flavors.sql';

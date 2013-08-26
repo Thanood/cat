@@ -193,7 +193,7 @@ function Game.GetFlavors(itemTable, itemColumn, itemType, minVal, skipHeader)
 		log:Fatal("Game.GetFlavors: itemTable=%s itemColumn=%s itemType=%s", itemTable, itemColumn, itemType)
 	end
 	for flavorInfo in GameInfo[itemTable](string.format("%s = '%s'", itemColumn, itemType)) do
-		if not flavorInfo.FlavorType then
+		if not flavorInfo.FlavorType or not GameInfo.Flavors[flavorInfo.FlavorType] then
 			log:Error("Game.GetFlavors: itemTable=%s itemColumn=%s itemType=%s FlavorType=%s", itemTable, itemColumn, itemType, flavorInfo.FlavorType)
 		else
 			local description = GameInfo.Flavors[flavorInfo.FlavorType].Description

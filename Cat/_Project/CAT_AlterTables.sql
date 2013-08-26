@@ -435,6 +435,7 @@ ALTER TABLE Specialists		ADD IconString							text;
 
 ALTER TABLE Units			ADD BarbUpgradeType						text;
 ALTER TABLE UnitCombatInfos	ADD PromotionCategory					text;
+ALTER TABLE UnitCombatInfos	ADD FlavorType							text REFERENCES Flavors(Type) default 'FLAVOR_OFFENSE';
 
 ALTER TABLE UnitPromotions	ADD IsFirst								boolean;
 ALTER TABLE UnitPromotions	ADD IsAttack							boolean;
@@ -455,6 +456,7 @@ UPDATE Worlds SET ResourceMod = 100;
 
 ALTER TABLE Yields			ADD IsTileYield							boolean;
 ALTER TABLE Yields			ADD TileTexture							text;
+ALTER TABLE Yields			ADD FlavorType							text REFERENCES Flavors(Type) default 'FLAVOR_INFRASTRUCTURE';
 ALTER TABLE Yields			ADD GoldenAgeSurplusYieldMod			integer default 0;
 ALTER TABLE Yields			ADD PlayerThreshold						integer default 0;
 ALTER TABLE Yields			ADD YieldFriend							integer default 0;

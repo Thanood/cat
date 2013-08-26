@@ -1,6 +1,6 @@
 --
 
-/*
+--/*
 UPDATE Technologies
 SET Help = "";
-*/
+--*/

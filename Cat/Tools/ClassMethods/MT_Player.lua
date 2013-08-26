@@ -30,6 +30,15 @@ function PlayerClass.GetBuildingAddonLevel(player, buildingID)
 end
 
 ---------------------------------------------------------------------
+function PlayerClass.GetCivName(player)
+	if player:IsMinorCiv() then
+		return Locale.ConvertTextKey(GameInfo.MinorCivilizations[player:GetMinorCivType()].Description)
+	end
+	local civInfo = GameInfo.Civilizations[player:GetCivilizationType()]			
+	return (Locale.ConvertTextKey(civInfo.Description))
+end
+
+---------------------------------------------------------------------
 -- PlayerClass:GetCapitalCity()
 -- fixes bug with vanilla version
 --
